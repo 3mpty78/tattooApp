@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, StatusBar } from "react-native";
 
 export default StyleSheet.create({
   view: {
@@ -30,5 +30,20 @@ export default StyleSheet.create({
     borderColor: "#fff",
     marginBottom: 50,
     borderRadius: 15,
+  },
+  item: {
+    padding: 20,
+    marginVertical: 8,
+    marginHorizontal: 16,
+    width: 80,
+    height: 80,
+    backgroundColor: "#fff",
+  },
+  container: {
+    flex: 1,
+    borderWidth: 2,
+    alignItems: "center",
+    justifyContent: "center",
+    borderColor: "#FFF",
   },
 });

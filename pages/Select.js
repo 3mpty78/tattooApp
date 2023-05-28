@@ -1,8 +1,9 @@
 import React from "react";
 import { View, ImageBackground, Pressable, Text } from "react-native";
 import Styles from "../style/Style";
+import Menu from "../components/List";
 
-export default function SelectMenu({ navigation }) {
+function SelectMenu({ navigation }) {
   return (
     <View style={Styles.view}>
       <ImageBackground
@@ -10,7 +11,19 @@ export default function SelectMenu({ navigation }) {
         style={Styles.image}
         resizeMode="cover"
       >
-        <View style={{ flex: 1, justifyContent: "flex-end" }}>
+        <View
+          style={{
+            flex: 1,
+          }}
+        >
+          <Menu />
+        </View>
+        <View
+          style={{
+            flex: 1,
+            justifyContent: "flex-end",
+          }}
+        >
           <Pressable
             style={({ pressed }) => [
               {
@@ -37,3 +50,4 @@ export default function SelectMenu({ navigation }) {
     </View>
   );
 }
+export default SelectMenu;
