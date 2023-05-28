@@ -15,10 +15,20 @@ export default StyleSheet.create({
     color: "#fff",
     flex: 1,
     flexDirection: "column",
-    fontSize: 30,
+    fontSize: 40,
   },
   image: {
     flex: 1,
     justifyContent: "center",
+  },
+  button: {
+    alignSelf: "center",
+    justifyContent: "center",
+    height: 40,
+    width: "50%",
+    borderWidth: 2,
+    borderColor: "#fff",
+    marginBottom: 50,
+    borderRadius: 15,
   },
 });
